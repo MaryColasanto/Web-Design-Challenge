@@ -10,8 +10,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Latitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="nav justify-content-end" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="temperature.html">Temperature</a>
+          <a class="dropdown-item" href="humidity.html">Humidity</a>
+          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="comparisons.html">Comparison</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="data.html">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <body>
-  <section>
+  <div class="container_left">
     <h1>Summary: Latitude vs. X</h1>
     <hr>
     <article>
@@ -19,15 +47,18 @@
     <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
     <p>After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
     </article>
-  </section>
-  <section>
+  </div>
+  <div class="container_right">
     <h2>Visualizations</h2>
     <hr>
-    <img href: src="Resources/assets/images/Fig1.png" alt="City Latitude vs. Temperature Map"/>
-    <img href: src="Resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity Map"/>
-    <img href: src="Resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness Map"/>
-    <img href: src="Resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed Map"/>
-  </section>
+    <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" alt="City Latitude vs. Temperature Map"/></a>
+    
+    <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="City Latitude vs. Humidity Map"/></a>
+        
+    <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="City Latitude vs. Cloudiness Map"/></a>
+    
+    <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="City Latitude vs. Wind Speed Map"/></a>
+  </div>
 
 
   <a href="data.html">Data</a>
